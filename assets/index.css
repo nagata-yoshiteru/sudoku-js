@@ -1,0 +1,41 @@
+div#input, div#output, div#possible {
+    background-color: black;
+    padding: 3px;
+    width: fit-content;
+}
+
+div#input input, div#output div {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border: none;
+    padding: 0px;
+    margin: 1px;
+    font-size: 13pt;
+}
+
+div#possible div {
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    margin: 1px;
+}
+
+input#textInput, input#textOutput{
+    width: 640px;
+}
+
+.r2, .r5{
+    margin-bottom: 4px !important;
+}
+
+.c2, .c5{
+    margin-right: 4px !important;
+}
+
+.g1, .g3{
+    background-color: #CCC !important;
+}

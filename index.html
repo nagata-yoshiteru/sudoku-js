@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>自動数独ソルバー | Automated Sudoku Solver</title>
+        <meta charset="UTF-8">
+        <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
+        <script src="./assets/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/index.css">
+    </head>
+    <body>
+        <h1>自動数独ソルバー | Automated Sudoku Solver</h1>
+        <p>
+            入力のマスに数独の問題を入力して、[自動解答]を押すと、出力に解答が表示されます。<br/>
+            Input a Sudoku problem into Input area and click [Solve], then answer will appear in Output area.<br/>
+            ほとんどのPCやスマートフォンで、1秒以内(多くの場合、0.1秒以下)で解答できます。<br/>
+            Most PC or smart phones can solve a problem within 1 sec (often within 0.1 sec).
+        </p>
+        <h2>入力 | Input area</h2>
+        <div id="input"></div>
+        <br>
+        or
+        <br>
+        <input id="textInput" type="text" size="82" maxlength="81" pattern="^[0-9]+$">
+        <br><br>
+        <label><input type="checkbox" name="reserve">予約 | Reserve</label>
+        <label><input type="checkbox" name="xwing">Xウィング | X-Wing</label><br/>
+        <button onclick="run()">自動解答 | Solve</button>
+        <br>
+        <h2>出力 | Output area</h2>
+        <div id="output"></div>
+        <div id="elapsed"></div>
+        <input id="textOutput" type="text" size="82" maxlength="81">
+        <script>
+            $(document).ready(loadInputForm());
+        </script>
+    </body>
+</html>
